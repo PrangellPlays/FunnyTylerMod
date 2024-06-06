@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "ftm",
+	"version": "${version}",
+	"name": "Funny Tyler Mod",
+	"description": "Funny mod made for Tyler",
+	"authors": [
+		"Owner - PrangellPlays"
+	],
+	"license": "PrangellPlays",
+	"icon": "assets/ftm/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.prangellplays.ftm.FunnyTylerMod"
+		],
+		"client": [
+			"dev.prangellplays.ftm.FunnyTylerModClient"
+		],
+		"fabric-datagen": [
+          "dev.prangellplays.ftm.FunnyTylerModDataGenerator"
+		]
+	},
+	"mixins": [
+		"ftm.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
